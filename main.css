@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "helvetica neue", "helvetica", "arial", sans-serif;
+  color: #666;
+  padding-top: 2%;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #666;
+}
+
+.statement {
+  font-size: 6em;
+  margin: 0 auto;
+  width: 80%;
+}
+
+
+.days-since{
+  font-family: 'Shadows Into Light', cursive;
+  color: rgb(215, 39, 39);
+  display: inline-block;
+  border: 2px solid #333;
+  height: 1.2em;
+  width: 1.4em;
+}
+
+
+
+.card {
+  margin: 2em auto;
+  border: 2px solid #ccc;
+  border-bottom: 4px solid #aaa;
+  border-radius: 4px;
+  max-width: 50rem;
+}
+
+.card-header {
+  text-align: center;
+}
+.card-header h3 {
+  color: #ccc;
+  margin: 0.5em;
+  text-align: left;
+}
+.card-description {
+  padding: 0 2em 1em 2em;
+  text-align: left;
+
+}
+.card-description ul.meta{
+  display: inline-block;
+  list-style: none;
+  padding-left: 1em;
+}
+.card-description img {
+  width: 5rem;
+}
+
+.card-main {
+  position: relative;
+}

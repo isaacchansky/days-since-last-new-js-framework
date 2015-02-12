@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Days Since A Javascript Framework</title>
+  <meta name="description" content="Days Since A Javascript Framework">
+  <meta name="author" content="Isaac Chansky">
+
+  <link rel="stylesheet" href="main.css?v=1.0">
+  <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+  <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css">
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  data from <span class="mega-octicon octicon-mark-github"></span>
+
+  <h1 class="statement">The Internet Has Seen <span class="days-since" data-hook="days-since"></span> <span data-hook="days-label"></span> Since The Last New Javascript Framework</h1>
+
+  <article class="card">
+    <header class="card-header">
+      <h3>The Latest...</h3>
+      <h2 data-hook="repo-name"></h2>
+    </header>
+    <section class="card-description">
+      <img data-hook="repo-owner-avatar" src="" alt="repo-owner">
+      <ul class="meta">
+        <li>
+          <span class="octicon octicon-star"></span>
+          <span data-hook="repo-stars"></span>
+        </li>
+        <li>
+          <span class="octicon octicon-repo-forked"></span>
+          <span data-hook="repo-forks"></span>
+        </li>
+        <li>
+          <a href="" data-hook="repo-link"></a>
+        </li>
+      </ul>
+      <p class="description"> </p>
+      <p data-hook="repo-desc"></p>
+    </section>
+
+  </article>
+  <p class="more"> <a href="https://github.com/search?utf8=%E2%9C%93&q=framework+language%3Ajavascript"> Show me more! </a></p>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/moment/min/moment.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
