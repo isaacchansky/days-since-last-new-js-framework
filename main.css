@@ -22,7 +22,7 @@ h1, h2, h3 {
 
 .days-since{
   font-family: 'Shadows Into Light', cursive;
-  color: #ff0000;
+  color: rgb(215, 39, 39);
   display: inline-block;
   height: 1.2em;
   width: 1.4em;
