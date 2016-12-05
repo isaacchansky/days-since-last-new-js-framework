@@ -24,8 +24,15 @@ $(document).ready(function(){
     dom('repo-owner-avatar').attr('src', repo.owner.avatar_url)
   }
 
+  var createdLimit = new Date();
+  createdLimit.setMonth(createdLimit.getMonth() - 1);
+  var createdLimitString = createdLimit.getFullYear()
+    + '-' + (createdLimit.getMonth() + 1)
+    + '-' + (createdLimit.getDate() < 10 ? "0" : "") + createdLimit.getDate()
 
-  $.getJSON('https://api.github.com/search/repositories?q=framework+language:javascript')
+  dom('created-after').text(createdLimitString);
+
+  $.getJSON('https://api.github.com/search/repositories?q=framework+language:javascript+created:>' + createdLimitString + '&per_page=100')
   .done(function(data){
     var repos = data.items;
 

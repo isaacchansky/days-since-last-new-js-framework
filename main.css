@@ -5,7 +5,7 @@
 body {
   font-family: "helvetica neue", "helvetica", "arial", sans-serif;
   color: #666;
-  padding-top: 2%;
+  padding: 2% 10% 0 10%;
   text-align: center;
 }
 
@@ -14,7 +14,7 @@ h1, h2, h3 {
 }
 
 .statement {
-  font-size: 6em;
+  font-size: 4em;
   margin: 0 auto;
   width: 80%;
 }
@@ -24,11 +24,15 @@ h1, h2, h3 {
   font-family: 'Shadows Into Light', cursive;
   color: rgb(215, 39, 39);
   display: inline-block;
-  border: 2px solid #333;
   height: 1.2em;
   width: 1.4em;
 }
 
+.small {
+  margin-top: 0.5em;
+  display: block;
+  text-align: right;
+}
 
 
 .card {
